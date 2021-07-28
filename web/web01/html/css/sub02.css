@@ -1,0 +1,103 @@
+@charset "utf-8";
+
+/* ========== sub03-container-S ========== */
+/* visual-S */
+#visual{background-image: url(../img/sub02/visual.jpg)}
+/* visual-E */
+/* sub03-section-S */
+/* app-S */
+.app-down{width: 750px; height: 140px; padding: 0 225px; margin-bottom: 100px;}
+.app-down:before{content: ""; width: 140px; height: 140px; float: left;
+    background: url(../img/sub02/down-logo.png) no-repeat center center;
+    border-radius: 10px;
+    box-shadow: 5px 4px 6px rgba(0, 0, 0, 0.3)
+}
+.app-down>div{float: right; width: 565px; padding-top: 5px; height: 60px;}
+.app-down p{display: block; margin-bottom: 25px; padding: 0 35px;
+    font-size: 18px; line-height: 30px; text-align: center
+}
+.app-down p strong{font-weight: 400}
+.app-down>div div{height: 50px}
+.app-down div a:before{content: ""; float: left; width: 25px; height: 30px;
+    background: url(../img/sub02/down-ikon.png) no-repeat 0 0
+}
+.app-down div a:last-child:before{background-position: -59px 0
+}
+.app-down div a{float: left; width: 250px; height: 40px; padding: 10px 10px 0;
+    background-color: #5484dc;
+    font-size: 18px; text-align: center; line-height: 30px; color: #fff
+}
+.app-down div a:first-child{margin-right: 25px;}
+.app-down div a:after{content: ""; float: right; width: 26px; height: 30px;
+    background: url(../img/sub02/down-ikon.png) no-repeat -29px 0
+}
+.app-cont{border-top: 1px solid rgba(0, 0, 0, 0.1)}
+.app-cont>li{padding: 60px 0 80px 0; margin-bottom: 60px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1)
+}
+.app-cont>li div{width: 630px; padding-top: 50px;
+    position: relative
+}
+.app-cont>li:before{content: "";
+    background-repeat: no-repeat; background-position: center center
+}
+.app-cont>li:nth-child(2n-1):before{ width: 420px; height: 450px; float: left;}
+.app-cont>li:nth-child(2n):before{ width: 240px; height: 440px; float: right;}
+.app-cont>li:nth-child(1):before{background-image: url(../img/sub02/sub02-cont01.png)}
+.app-cont>li:nth-child(2):before{background-image: url(../img/sub02/sub02-cont02.png)}
+.app-cont>li:nth-child(3):before{background-image: url(../img/sub02/sub02-cont03.png)}
+.app-cont>li:nth-child(4):before{background-image: url(../img/sub02/sub02-cont04.png)}
+.app-cont>li:nth-child(5):before{background-image: url(../img/sub02/sub02-cont05.png)}
+.app-cont>li:after{content: ""; display: block; clear: both}
+.app-cont>li:nth-child(2n-1) div{float: right}
+.app-cont>li:nth-child(2n) div{float: left}
+/* .app-cont:nth-child(2n-1):before{content: ""; float: left; width: 420px; height: 450px;
+    background: url(../img/sub02/sub02-cont01.png) no-repeat center center;
+}
+.app-cont:nth-child(2n-1):after{} */
+.app-cont h4:before{content: ""; display: block; width: 10px; height: 30px;
+    background-color: #032054;
+    position: absolute; left: 0; top:57px;
+    transition: all 0.4s
+}
+.app-cont h4{height: 40px; margin-bottom: 40px;
+    font-size: 20px; font-weight: 500; line-height: 40px; color: #222; text-indent: 25px;
+    transition: all 0.3s
+}
+.app-cont h4:after{content: ""; display: block; width: 100%; height: 0;
+    border-bottom: 5px solid #053897
+}
+.app-cont ul li{padding: 10px 10px 10px 30px;
+    color: rgba(34, 34, 34, 0.6); line-height: 26px; letter-spacing: -0.6px;
+    position: relative
+}
+.app-cont ul li:after{content: ""; display: block; width: 18px; height: 18px;
+    background: url(../img/cont-tool.png) no-repeat 0 0;
+    position: absolute; left: 0; top: 15px
+}
+.app-code{text-align: center}
+.app-code ul{display: inline-block}
+.app-code li:before{content: ""; display: block; width: 244px; height: 244px; margin-bottom: 30px;
+    border: 3px solid #5484dc;
+    background: url(../img/sub02/qrcode.jpg) no-repeat center center
+}
+.app-code li{width: 250px; display: inline-block;
+    font-size: 18px; line-height: 30px;
+    position: relative
+}
+.app-code li:first-child{margin-right: 50px;}
+.app-code .fa-android, .fa-apple{margin-right: 10px;
+    font-size:24px
+}
+/* .app-code li:after{content: ""; width: 25px; height: 30px; float: left;
+    background-image: url(../img/sub02/down-ikon.png);
+}
+.app-code li:first-child:after{margin: 0 10px 0 80px;
+    background-position: 0 -31px
+}
+.app-code li:last-child:after{margin: 0 10px 0 70px;
+    background-position:-59px -31px
+} */
+/* app-E */
+/* sub03-section-E */
+/* ========== sub05-container-E ========== */

@@ -1,0 +1,475 @@
+@charset "utf-8";
+
+/* =============== common-S =============== */
+body{transition: all 0.3s}
+.inner{width: 1200px; margin: 0 auto}
+#header, #container, #footer{width: 100%; min-width: 1200px}
+/* =============== common-E =============== */
+
+/* =============== header-S =============== */
+#header{height: 80px; padding-top: 10px;
+    position: absolute; left: 0; top: 0; z-index: 100
+}
+#header .pi{float:left; width: 260px; height: 60px;margin-top: 5px}
+#header .pi a{width: 100%; height: 60px; display: block;
+    background-image: url(../img/pi.png);
+    text-indent: -9999px
+}
+#gnb{float: right}
+#gnb ul{height: 70px}
+#gnb li{float: left; height: 70px}
+#gnb li a{padding: 0 40px; display: block; height: 70px;
+    font-size: 18px; font-weight: 500; text-align: center; line-height: 70px; color: #fff
+}
+/* =============== header-E =============== */
+
+/* =============== container-S =============== */
+#container{position: relative}
+#container>section::after{content: ""; display: block; clear: both}
+#container>section{margin-bottom: 200px}
+
+/* visual-S */
+.visual{width: 100%; min-width: 1200px; height: 920px; padding-top: 330px; overflow: hidden;
+    text-align: center;
+    position: relative
+}
+.visual .inner{height: 590px;
+    position: relative
+}
+.visual .inner div{width: 700px; height: 300px;padding-top: 70px;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    position: absolute; left: 250px; top: 0
+}
+.visual strong{display: block; margin-bottom: 15px; height: 76px;
+    color: #555; font-size: 56px; font-weight: 700; line-height: 76px
+}
+.visual p{height: 80px; padding: 0 100px;
+    font-size: 30px; font-weight: 500; color: #999; line-height: 40px
+}
+/* .visual video{height: 920px; width: 100%; min-width: 1200px;
+    position: absolute; left: 0; top: 0;
+    object-fit: cover
+} */
+.visual video{-webkit-transform: translateX(-50%) translateY(-50%); 
+    -moz-transform: translateX(-50%) translateY(-50%); 
+    -ms-transform: translateX(-50%) translateY(-50%); 
+    -o-transform: translateX(-50%) translateY(-50%); 
+    transform: translateX(-50%) translateY(-50%); 
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    min-width: 100%; 
+    min-height: 100%; 
+    width: auto; 
+    height: auto; 
+    z-index: -100
+}
+
+.visual span{width: 100%;
+    color: #999; text-align: center;
+    position: absolute; left: 0; bottom: 0;
+    animation: up 1s infinite
+}
+
+@keyframes up{
+    50% {bottom: 10px}
+    100%{bottom: 0}
+}
+
+.visual span::after{content: ""; display: block; width: 2px; height: 50px; margin: 10px auto 0;
+    background-color: #999
+}
+/* visual-E */
+
+/* container-common-S */
+.tit{height: 80px; margin-bottom: 15px;
+    font-family: "DM Serif Text", serif,"돋움", Dotum, AppleGothic, sans-serif; font-size: 70px; line-height: 80px
+}
+.desc{margin-bottom: 80px;
+    font-size: 18px; line-height: 28px; color: #555
+}
+
+#design li:last-child .info, #project li:last-child{margin-bottom: 0}
+
+/*  modal-S */
+.modal_wrap{width: 100%; height: 100%; overflow-y: auto; padding-bottom: 100px;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed; left: 0; top: 0; z-index: 1000;
+    transition: all 0.3s
+}
+
+.modal{width: 1050px; padding: 20px;margin: 30px auto 0;
+    border-radius: 20px;
+    background-color: #fff;
+    position: relative;
+}
+#container .modal strong{display: block; width: 100%; height: 40px; margin-bottom: 10px;
+    border-bottom:  1px solid rgba(0, 0, 0, 0.2)
+}
+.modal figure{padding-bottom: 10px; margin-bottom: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2)
+}
+.modal img{display: block; margin: 0 auto}
+.modal_btn{width: 100px; height: 40px; float: right; cursor: pointer;
+    border-radius: 10px; outline: none;
+    color: #fff; 
+    background: -webkit-linear-gradient(-90deg, #0c7bb3 -100%, #f2bae8 100%);
+    background: -moz-linear-gradient(-90deg, #0c7bb3 -100%, #f2bae8 100%);
+    background: -ms-linear-gradient(-90deg, #0c7bb3 -100%, #f2bae8 100%);
+    background: -o-linear-gradient(-90deg, #0c7bb3 -100%, #f2bae8 100%);
+    background: linear-gradient(-90deg, #0c7bb3 -100%, #f2bae8 100%);
+}
+.modal_wrap{display: none}
+#container .modal::after{content: ""; display: block; clear: both}
+
+/* modal-js-css-S */
+.scroll_off{overflow-y: hidden}
+#container .on{display: block}
+/* modal-js-css-E */
+
+/*  modal-E */
+
+/* container-common-E */
+
+/* about-S */
+#about div{float: left; width: 400px}
+#about li:first-child{margin-bottom: 70px}
+#about dt{height: 28px; margin-bottom: 10px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+    font-size: 18px; line-height: 28px; font-weight: 500
+}
+#about dd{color: #999}
+#about figure{float: right; width: 410px; height: 544px;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1)
+}
+/* about-E */
+
+/* design-S */
+#design{padding: 50px 0 60px;
+    background-color: rgba(255, 211, 208, 0.2)
+}
+
+#design .info{width: 100%; height: 300px; margin-bottom: 100px;
+    text-align: center;
+    position: relative
+}
+.design_left{float: left; width: 550px;
+    text-align: right
+}
+.design_right{float: right; width: 550px;
+    text-align: left
+}
+
+#design .info div{position:absolute; bottom: 0}
+#design .info div::after{content: ""; width: 100px; height:1px;
+    background-color: rgba(0, 0, 0, 0.2);
+    position: absolute; top: 30px
+}
+#design li:nth-child(odd) .info div{left: 0}
+#design li:nth-child(even) .info div{right: 0}
+#design li:nth-child(odd) .info div::after{right: -120px}
+#design li:nth-child(even) .info div::after{left: -120px}
+
+#design li strong{width: 100%; height: 32px;
+    font-size: 22px; line-height: 32px; color: #555; font-weight: 500
+}
+#design li p{width: 100%; height: 26px;
+    color: #999
+}
+#design .info figure{width: 500px; height: 300px; overflow: hidden;
+    background-color: #999; border-radius: 30px;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+    transform: scale(1);
+    transition: all 0.3s
+}
+#design .info a{display: block}
+#design li:nth-child(even) .info figure{left: 0}
+#design li:nth-child(odd) .info figure{right: 0}
+
+#design .info figure:hover{transform: scale(1.03)}
+
+/* design-E */
+
+/* project-S */
+#project li{width: 100%; height: 600px; margin-bottom: 100px;  padding: 10px;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+    background-color: #fff
+}
+
+.project_box{float: left; width: 360px; height: 580px; padding: 20px 10px 10px;
+    background-color: #f6f6f6;
+    position: relative
+}
+.project_box>span{display: block; height: 60px; margin-bottom: 200px;
+    background-repeat: no-repeat; background-image: url(../img/logo.png);
+    text-indent: -9999px
+}
+#project li:nth-child(1) .project_box>span{width: 36px;
+    background-position: -66px 0
+}
+#project li:nth-child(2) .project_box>span{width: 115px;
+    background-position: -106px 0
+}
+#project li:nth-child(3) .project_box>span{width: 60px;
+    background-position: 0 0
+}
+.project_box strong{display: block; width: 100%; height: 40px; margin-bottom: 15px;
+    font-size: 30px; line-height: 40px; font-weight: 700; color: #222
+}
+.project_box p{margin-bottom: 5px; margin-bottom: 45px;
+    color: #999
+}
+.project_box em{color: #777; height: 40px;
+    font-size: 14px; line-height: 40px;
+    position: absolute; left: 10px; bottom: 82px
+}
+
+.project_btn_box a{width: 150px; height: 40px; float: left; margin-bottom: 20px;
+    border: 1px solid /*transparent*/;
+    -webkit-border-image: -webkit-linear-gradient(-90deg, #0c7bb3 -100%, #f2bae8 100%);
+    -moz-border-image: -moz-linear-gradient(-90deg, #0c7bb3 -100%, #f2bae8 100%);
+    -o-border-image: -o-linear-gradient(-90deg, #0c7bb3 -100%, #f2bae8 100%);
+    border-image: linear-gradient(-90deg, #0c7bb3 -100%, #f2bae8 100%);
+    border-image-slice: 1;
+    background-color: #fff;
+    text-align: center; line-height: 38px; color: #555;
+    transition: all 0.3s
+}
+.project_btn_box a:first-child{margin-left: 190px}
+.project_btn_box a:nth-child(2){margin-right: 40px}
+
+#project li:nth-child(2) .project_btn_box a{margin: 60px 0 0 0}
+
+#project .project_site{width: 800px; height: 580px; float: right;
+    border: 1px solid rgba(0, 0, 0, 0.1)
+}
+#project .project_site a{display: block; width: 720px; height: 400px;
+    transform: scale(1);
+    transition: all 0.3s
+}
+
+.project_btn_box a:hover{background: -webkit-linear-gradient(-90deg, #0c7bb3 -100%, #f2bae8 100%);
+    background: -moz-linear-gradient(-90deg, #0c7bb3 -100%, #f2bae8 100%);
+    background: -ms-linear-gradient(-90deg, #0c7bb3 -100%, #f2bae8 100%);
+    background: -o-linear-gradient(-90deg, #0c7bb3 -100%, #f2bae8 100%);
+    background: linear-gradient(-90deg, #0c7bb3 -100%, #f2bae8 100%);
+    color: #fff
+}
+#project figure a:hover{transform: scale(1.02)}
+/* project-E */
+
+/* effect-S */
+#effect{padding: 50px 0 60px;
+    background-color: rgba(89, 184, 144, 0.1)
+}
+
+.effect_wrap{width: 100%; height: 340px; padding: 30px 30px 0;
+    background-color: #fff; 
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1)
+}
+.effect_wrap>div{width: 550px; height: 280px;
+    background-color: #000;
+    position: relative
+}
+
+.effect_hover01{float: left}
+.effect_hover02{float: right}
+
+#effect figure{width: 550px; height: 280px}
+
+.effect_hover01{text-align: center}
+.effect_hover01 strong{width: 300px;
+    font-size: 40px; font-weight: 700; color: #fff;
+    position: absolute; left: 120px; top: 130px; z-index: 10;
+    transition: all 0.3s
+}
+.effect_hover01 span{color: #ff0}
+.effect_hover01 p{width: 300px; opacity: 0;
+    color: #bbb;
+    position: absolute; left: 120px; top: 190px; z-index: 10;
+    transition: all 0.5s
+}
+.effect_hover01 ul{width: 550px; height: 280px;
+    position: absolute; left: 0; top: 0; z-index: 10
+}
+.effect_hover01 li{background-color: #fff;
+    position: absolute;
+    transition: all 0.1s
+}
+.effect_hover01 li:nth-child(1){width: 0; height: 2px;
+    left:10px; top:20px;
+}
+.effect_hover01 li:nth-child(2){width: 2px; height: 0;
+    right:20px; top:10px;
+    transition-delay: 0.1s
+}
+.effect_hover01 li:nth-child(3){width: 0; height: 2px;
+    right: 10px; bottom: 20px;
+    transition-delay: 0.2s
+}
+.effect_hover01 li:nth-child(4){width: 2px; height: 0;
+    left: 20px; bottom: 10px;
+    transition-delay: 0.3s
+}
+.effect_hover01 figure{overflow: hidden;
+    position: absolute; left: 0; top: 0;
+    transition: all 0.3s
+}
+.effect_hover01 img{opacity: 0.8;
+    transform: scale(1);
+    transition: all 0.3s
+}
+
+.effect_hover01:hover strong{top: 100px}
+.effect_hover01:hover p{top: 170px; opacity: 1}
+.effect_hover01:hover li:nth-child(1){width: 530px}
+.effect_hover01:hover li:nth-child(2){height: 260px}
+.effect_hover01:hover li:nth-child(3){width: 530px}
+.effect_hover01:hover li:nth-child(4){height: 260px}
+.effect_hover01:hover figure{opacity: 0.3}
+.effect_hover01:hover img{transform: scale(1.2)}
+
+.effect_hover02 strong{color: #fff; font-weight: 700;
+    position: absolute; left: 440px; bottom: 5px; z-index: 10;
+    transition: all 0.3s
+}
+.effect_hover02 p{width: 300px; opacity: 0;
+    color: #bbb;
+    position: absolute; left: 30px; bottom: 120px; z-index: 10;
+    transition: all 0.3s
+}
+.effect_hover02 ul{width: 30px; height: 20px;
+    position: absolute; left: 30px; top: 30px; z-index: 10
+}
+.effect_hover02 li{width: 100%; height: 1px; opacity: 1;
+    background-color: #fff;
+    position: absolute;
+    transition: all 0.3s
+}
+.effect_hover02 li:nth-child(1){left: 0; top: 0}
+.effect_hover02 li:nth-child(2){left: 0; top: 9px}
+.effect_hover02 li:nth-child(3){left: 0; top: 9px}
+.effect_hover02 li:nth-child(4){left: 0; bottom: 0}
+.effect_hover02 figure{position: absolute; left: 0; top: 0;
+    transform: scale(1) translate(0,0); transform-origin: left top;
+    transition: all 0.3s
+}
+.effect_hover02 div{width: 30px; height: 150px; padding-top: 10px; overflow: hidden;
+    position: absolute; right: 30px; top: 10px
+}
+.effect_hover02 span{display: block; width: 100%; height: 40px; cursor: pointer;
+    font-size: 30px; line-height: 40px; color: #999;
+    transform: translate(50px, 0);
+    transition: all 0.4s
+}
+.effect_hover02 span + span{margin-top: 10px}
+.effect_hover02:hover strong{left: 30px}
+.effect_hover02:hover p{bottom: 60px; opacity: 1}
+.effect_hover02:hover figure{transform: scale(0.8) translate(20px,20px)}
+.effect_hover02 ul:hover li:nth-child(1){opacity: 0}
+.effect_hover02 ul:hover li:nth-child(2){transform: rotate(30deg)}
+.effect_hover02 ul:hover li:nth-child(3){transform: rotate(-30deg)}
+.effect_hover02 ul:hover li:nth-child(4){opacity: 0}
+.effect_hover02:hover span{transform: translate(0,0)}
+.effect_hover02:hover span:nth-child(2){transition-delay: 0.2s}
+.effect_hover02:hover span:nth-child(3){transition-delay: 0.4s}
+/* effect-E */
+
+/* side_menu-S */
+.side_menu{position: fixed; right: 95px; top: 300px}
+.side_menu li{width: 95px; height: 20px; margin-bottom: 20px;
+    transition: all 0.3s
+}
+.side_menu li a{display: block;width: 20px; height: 30px; overflow: hidden; padding: 5px 0;
+    line-height: 20px;
+    position: relative
+}
+.side_menu li span{opacity: 0;
+    transition: all 0.3s
+}
+.side_menu li a::before{content:""; float: left; width: 20px; height: 20px; margin-right: 20px;
+    border-radius: 100%;
+    background-color: #e05149
+}
+.side_menu li a::after{content: ""; width: 0; height: 1px;
+    background-color: #999;
+    position: absolute; left: 10px; top: 15px;
+    transition: all 0.3s
+}
+
+.side_menu li a:hover{width: 95px}
+.side_menu li a:hover span{opacity:1}
+.side_menu li a:hover::after{width: 20px}
+
+/* side_menu-E */
+/* =============== container-E =============== */
+
+/* =============== footer-S =============== */
+#footer #contact{margin-bottom: 100px;
+    text-align: center
+}
+#footer #contact strong{margin-bottom: 20px; height: 50px; display: block;
+    font-family: "DM Serif Text", serif,"돋움", Dotum, AppleGothic, sans-serif; font-size: 40px; line-height: 50px
+}
+#footer #contact p{width: 450px; margin: 0 auto; height: 72px;
+    color: #777; font-size: 26px; line-height: 36px
+}
+.f-wrap{height:200px; padding-top: 70px;
+    background-color: #eee
+}
+#footer .pi{width: 260px; height: 60px; float: left; margin-right: 140px;
+    text-indent: -9999px;
+    background: url(../img/pi.png) no-repeat 0 -70px
+}
+.f-info{float: left; width: 400px;
+    text-align: center; font-size: 0
+}
+.f-info li{display:inline-block; width:50px; height: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 100%;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+    animation: shadow 3s infinite
+}
+
+@keyframes shadow {
+    50% {box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3)}
+    100% {box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.1)}
+}
+
+.f-info p{display: block; width: 48px; height: 48px; cursor: pointer;
+    color: #777; font-size: 20px; line-height: 48px
+}
+.f-info li:first-child{margin-right: 30px}
+
+.copy{float: right; height: 50px;
+    color: #999; font-size: 14px; line-height: 50px
+}
+/* =============== footer-E =============== */
+
+/* =============== script-S =============== */
+/* common-js */
+.off{opacity: 0}
+.view{display: none}
+.fade_in {
+    animation: fade-in 1.4s
+}
+  
+  @keyframes fade-in {
+      from {opacity: 0; transform: scale(.7,.7)}
+      to {opacity: 1}
+    }  
+
+/* side-menu-js */
+.side_position{right: 5px}
+.side_hidden{display: none}
+/* =============== script-E =============== */
+
+/* =============== aside-media-S =============== */
+@media screen and (max-width: 1599px) {
+    .side_menu{right: 5px}
+}
+@media screen and (max-width: 1399px) {
+    .side_menu{display: none}
+}
+/* =============== aside-media-E =============== */
+
+

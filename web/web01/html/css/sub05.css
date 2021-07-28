@@ -1,0 +1,157 @@
+@charset "utf-8";
+
+/* ========== sub05-container-S ========== */
+/* visual-S */
+#visual{background-image: url(../img/sub05/sub01-img.jpg)}
+/* visual-E */
+/* sub05-section-S */
+.section{padding: 80px 0 70px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1)
+}
+.clear:after{content: ""; display: block; clear: both; margin-bottom: 60px}
+/* intro-S */
+.intro{text-align:center; color: #222}
+.intro strong{display: block; height: 48px;
+    font-size: 28px; font-weight: 400; line-height: 48px
+}
+.intro p{margin-bottom: 70px; height: 36px;
+    font-size: 16px; color: #999; line-height: 36px
+}
+.intro ul{height: 280px; padding: 0 80px; margin-bottom: 60px}
+.intro li{float: left; width: 200px; height: 60px; padding-top: 220px;
+    font-size: 17px; font-weight: 400; line-height: 60px;
+    position: relative
+}
+.intro li + li{margin-left: 80px}
+.intro li:after{content: ""; width: 200px; height: 200px;
+    background-image: url(../img/sub05/sub05-intro.png);
+    position: absolute; left: 0; top: 0
+}
+.intro li:nth-child(1):after{background-position: 0 0}
+.intro li:nth-child(2):after{background-position: -211px 0}
+.intro li:nth-child(3):after{background-position: -422px 0}
+.intro li:nth-child(4):after{background-position: -633px 0}
+.intro img{display: block;
+    border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 100%
+}
+.intro em{font-size: 18px; line-height: 38px; color: #777}
+/* intro-E */
+/* guide-S */
+.guide h3{float: left; width: 200px; margin-right: 100px; height: 80px;
+    font-size: 25px; font-weight: 500; line-height: 80px; text-indent: 40px
+}
+.guide>div{float: left; width: 780px; padding: 0 60px}
+.guide ul{width:100%; height: 220px; margin-bottom: 60px;
+    text-align: center
+}
+.guide li{float: left; width: 150px; height:50px; padding-top: 170px;
+    
+    position: relative                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+}
+.guide li + li{margin-left: 60px}
+.guide li span{display: block; padding: 0 10px;
+    line-height: 25px;
+}
+.guide li:after{content: ""; width: 150px; height: 150px;
+    background-image: url(../img/sub05/sub05-guide.png);
+    position: absolute; left: 0; top: 0
+}
+.guide li:nth-child(1):after{background-position: 0 0;}
+.guide li:nth-child(2):after{background-position: -154px 0;}
+.guide li:nth-child(3):after{background-position: -308px 0;}
+.guide li:nth-child(4):after{background-position: -462px 0;}
+.guide p:before{content:""; float: left; margin-right: 43px; width: 87px; height: 90px;
+    background: url(../img/sub05/sub05-way05.png) no-repeat 0 0
+}
+.guide p{float:left; width: 540px; padding: 20px 110px 0 0; height: 90px;
+    line-height: 26px; color: rgba(34, 34, 34, 0.5)
+}
+.guide p span{display: block; padding-top: 20px;}
+/* guide-E */
+/* select-S */
+.select{margin-bottom: 60px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1)
+}
+.select:after{content: ""; display: block;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1)
+}
+.select>em{cursor: pointer; display: block;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    height: 60px;
+    font-size: 18px; font-weight: 400; line-height: 60px; text-indent: 20px;
+    position: relative
+}
+.select>ul{width: 100%;
+    text-align: center;
+    position: relative
+}
+.select>ul:after{content:""; display: block; clear: both}
+/* .select-model{float: left; padding-top: 120px;} */
+.select-model{display: inline-block}
+.select-model strong{width:200px; height: 50px; cursor: pointer;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    font-size: 20px; font-weight: 400; line-height: 50px;
+    position: absolute; left: 0; top: 0;
+    transition: all 0.3s
+}
+.select-model ul{display: none}
+
+/* select-js-S */
+.on{padding-top: 120px}
+.on strong{color: #00a0e9}
+.on ul{display: block; margin-top: 80px;
+    animation: fade-in 1s
+}
+
+    @keyframes fade-in {
+        from {opacity: 0}
+        to {opacity: 1}
+    }
+/* select-js-E */
+
+.select-model li{padding-top: 180px; float:left; width: 350px; height: 220px;
+    background-repeat: no-repeat; background-position: 0 0;
+    position: relative
+}
+.select-model li + li{margin-left: 75px}
+.select-model li em{height: 40px; display: block; margin-bottom: 30px;
+    font-size: 20px; line-height: 40px; color: rgba(34, 34, 34, 0.6)
+}
+.select-model li:after{content: ""; width: 350px; height: 143px;
+    position: absolute; left: 0; top: 0
+}
+.select-model li:nth-child(1):after{background-image: url(../img/sub05/xc90_01.png);}
+.select-model li:nth-child(2):after{background-image: url(../img/sub05/xc60_01.png);}
+.select-model li:nth-child(3):after{background-image: url(../img/sub05/xc40_01.png);}
+.select-model:nth-child(2) li:nth-child(1):after{background-image: url(../img/sub05/s90_01.png);}
+.select-model:nth-child(2) li:nth-child(2):after{background-image: url(../img/sub05/s60_01.png);}
+.select-model:nth-child(3) li:nth-child(1):after{background-image: url(../img/sub05/v90_01.png);}
+.select-model:nth-child(3) li:nth-child(2):after{background-image: url(../img/sub05/v60_01.png);}
+.select-model:nth-child(1) strong{left:300px}
+.select-model:nth-child(2) strong{left:500px}
+.select-model:nth-child(3) strong{left:700px}
+.select-btn div{height: 40px; margin-bottom: 30px;}
+.select-btn div a{float: left; width: 168px; height: 38px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    font-size: 14px; line-height: 38px
+}
+.select-btn div a:first-child{ margin-right: 10px}
+.select-btn>a{display:block; width: 135px; height: 40px; margin: 0 auto;
+    background-color: #003057;
+    color: #fff; line-height: 40px;
+    transition: all 0.3s
+}
+.select-model strong:hover{color: #00a0e9}
+.model-btn>a:hover{background-color:#00a0e9}
+/* select-E */
+.inner>a{display: block; width: 148px; height: 48px; margin: 0 auto 120px auto;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    font-size: 18px; color: #222; line-height: 50px; text-align: center;
+    transition: all 0.3s
+}
+
+/* .select-model:hover ul{display: block;} */
+.inner>a:hover{background-color:#eee;
+}
+/* sub05-section-E */
+/* ========== sub05-container-E ========== */

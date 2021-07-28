@@ -1,0 +1,64 @@
+@charset "utf-8";
+
+body{background-color:#fafafa}
+/* ========== sub01-container-S ========== */
+/* visual-S */
+#visual{background-image: url(../img/sub01/visual.jpg)}
+/* visual-E */
+/* sub01-section-S */
+/* best-S */
+.best{margin-bottom: 120px}
+.best:after{content: ""; display: block; clear: both;}
+.best>li{float: left; width: 350px;}
+.best>li + li{margin-left: 75px;}
+.best dl{width: 100%; padding-top: 220px;
+    background-repeat: no-repeat; background-position:center 0;
+    position: relative
+}
+.best>li:nth-child(1) dl{background-image: url(../img/xc40.JPG)}
+.best>li:nth-child(2) dl{background-image: url(../img/xc60_Model_white.JPG)}
+.best>li:nth-child(3) dl{background-image: url(../img/s60_Model_white.JPG)}
+.best dt:before{content: ""; display: block; width: 10px; height: 30px;
+    background-color: #032054;
+    position: absolute; left: 0; top:228px
+}
+.best dt{height: 40px; margin-bottom: 45px;
+    font-size: 20px;line-height: 40px; color: rgba(34, 34, 34, 0.3); text-indent: 25px
+}
+.best dt span{margin-right: 20px;
+    font-size: 26px; font-weight: 400; line-height: 40px; color:#222
+}
+.best dt:after{content: ""; display: block; width: 100%; height: 0;
+    border-bottom: 5px solid #053897
+}
+.best dd{height: 22px; margin-bottom: 75px; padding: 0 5px 0 5px;
+    font-size: 18px; line-height: 22px; letter-spacing: -0.8px;
+}
+.best ul{padding-top: 20px; width: 100%;
+    border-top: 1px solid rgba(0, 0, 0, 0.1)
+}
+.best ul:after{content: ""; display: block; clear: both; width: 100%; margin-bottom: 60px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1)
+}
+.best ul li{height: 20px; padding: 10px 0;
+    text-indent: 30px; color: rgba(34, 34, 34, 0.6); line-height: 20px;
+    position: relative
+}
+.best ul li:last-child{margin-bottom: 20px;}
+.best ul li:after{content: ""; display: block; width: 18px; height: 20px;
+    background: url(../img/cont-tool.png) no-repeat 0 0;
+    position: absolute; left: 0; top: 12px
+}
+.best a{display: block; margin: 0 auto; width: 248px; height: 58px;
+    border: 1px solid #053897; border-radius: 10px;
+    font-size: 18px; line-height: 58px; text-indent: 45px;
+    transition: all 0.3s
+}
+.best a:after{content: ""; display: block; width: 10px; height: 58px; float: right; margin-right: 45px;
+    background: url(../img/sub01/btn-tool.png) no-repeat 0 center
+}
+
+.best a:hover{background-color: #eee}
+/* best-E */
+/* sub01-section-E */
+/* ========== sub01-container-E ========== */

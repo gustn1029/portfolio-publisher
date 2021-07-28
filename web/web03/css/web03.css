@@ -1,0 +1,207 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+/* font-family: 'Poiret One', cursive; */
+
+/* =============== common-S =============== */
+body{font-family: 'Poiret One', cursive, dotum, sans-serif}
+/* =============== common-E =============== */
+
+/* =============== header-S =============== */
+#header{width: 15%; height: 100%;
+    position: fixed; left: 0; top: 0; z-index: 100;
+    background-color: #fff
+}
+#logo{width: 180px; height: 136px;  margin-left: calc(-180px / 2);
+    position: absolute; left: 50%; top: 50px
+}
+#logo a{display: block; width: 100%; height: 136px;
+    background-image: url(../img/logo1.png);
+    text-indent: -9999px
+}
+#gnb{width: 200px; margin-right: calc(-200px / 2);
+    position: absolute; right: 50%; top: 300px;
+    text-align: center
+}
+.tnb{width: 90px; margin-right: calc(-90px / 2);
+    position: absolute; right: 50%; bottom: 30px;
+    text-align: center
+}
+.tnb a{float: left;
+    text-indent: -9999px
+}
+.tnb_box{width: 90px; height: 18px}
+.tnb_box a{height: 18px;}
+.tnb_box a:first-child{width: 40px;
+    background-image: url(../img/sns1.png)
+}
+.tnb_box a:last-child{width: 50px;
+    background-image: url(../img/sns2.png)    
+}
+.tnb_sns{width: 90px; height: 29px}
+.tnb_sns a{height: 29px}
+.tnb_sns a:nth-child(1){width:29px;
+    background-image: url(../img/sns3.png)
+}
+.tnb_sns a:nth-child(2){width:31px;
+    background-image: url(../img/sns4.png)
+}
+.tnb_sns a:nth-child(3){width:30px;
+    background-image: url(../img/sns5.png)
+}
+/* =============== header-E =============== */
+
+/* =============== container-S =============== */
+#container{width: 85%; margin-left: 15%}
+/* bar-S */
+#bar{height: 30px;
+    background-color: #222;
+    color: #fff
+}
+#bar .sign{float: left}
+#bar .sign li{float: left}
+#bar .login{float: right}
+#bar .login li{float: left}
+/* bar-E */
+
+/* contents-S */
+.contents article{float:left; width:20%; height: 250px;
+    background-size: cover
+}
+.contents article:nth-of-type(1) {width: 60%; height: 500px;
+    background-image: url(../img/pic1.jpg);
+}
+.contents article:nth-of-type(2) {width: 40%;
+    background-color: #333;
+}
+.contents article:nth-of-type(3) {
+    background-color: #444;
+}
+.contents article:nth-of-type(4) {
+    background-color: #555;
+}
+.contents article:nth-of-type(5) {
+    background-image:url(../img/pic3.jpg)
+}
+.contents article:nth-of-type(6) {width: 40%;
+    background-color: #777;
+}
+.contents article:nth-of-type(7) {
+    background-color: #888;
+}
+.contents article:nth-of-type(8) {
+    background-color: #999;
+}
+.contents article:nth-of-type(9) {width: 40%;
+    background-color: #aaa;
+}
+.contents article:nth-of-type(10){
+    background-color: #bbb;
+}
+.contents article:nth-of-type(11){
+    background-color: #ccc;
+}
+.contents article:nth-of-type(12){
+    background-color: #ddd;
+}
+.contents h3{}
+.contents strong{}
+.contents dl{}
+.contents dt{}
+.contents dd{}
+/* contents-E */
+/* =============== container-E =============== */
+
+/* ****************** 1200 ~ 1599-S ****************** */
+@media screen and (min-width: 1200px) and (max-width: 1599px) {
+    #header{width: 100%; height: 90px;
+        position: relative;
+        background-color: #fff
+    }
+    #logo{width: 250px; height: 50px; margin: 0;
+        left: 20px; top: 20px
+    }
+    #logo a{display: block; width: 100%; height: 50px;
+        background-image: url(../img/logo2.png);
+    }
+    #gnb{width: 500px; margin-right: 0;
+        right: 25%; top: 30px
+    }
+    #gnb li{float: left; padding: 0 20px}
+    .tnb{width: 90px; margin-right: 0;
+        right: 5%; top: 20px;
+        text-align: center
+    }
+
+
+    #container{width: 100%; margin-left: 0;}
+}
+/* ****************** 1200 ~ 1599-E ****************** */
+
+/* ****************** 800 ~ 1199-S ****************** */
+@media screen and (min-width: 800px) and (max-width: 1199px) {
+    #header{width: 100%; height: 120px;
+        position: relative;
+    }
+    #logo{width: 250px; height: 50px; margin-left: calc(-250px / 2);
+        left: 50%; top: 20px
+    }
+    #logo a{display: block; width: 100%; height: 50px;
+        background-image: url(../img/logo2.png);
+    }
+    #gnb{width: 100%; margin-right:0;
+        right: 0; top: 80px;
+    }
+    #gnb li{float:left; width: 25%}
+    .tnb{display: none}
+
+    #container{width: 100%; height: 100%; margin-left: 0}
+
+
+    #bar{display: none}
+    .contents article{width: 50%}
+    .contents article:nth-of-type(1) {width: 100%}
+    .contents article:nth-of-type(2) {width: 50%}
+    .contents article:nth-of-type(3) {width: 50%}
+    .contents article:nth-of-type(4) {display: none}
+    .contents article:nth-of-type(5) {width: 100%}
+    .contents article:nth-of-type(6) {display: none}
+    .contents article:nth-of-type(7) {width: 50%;}
+    .contents article:nth-of-type(8) {display: none}
+    .contents article:nth-of-type(9) {width: 50%}
+    .contents article:nth-of-type(10){width: 50%}
+    .contents article:nth-of-type(11){width: 50%}
+    .contents article:nth-of-type(12){display: none}
+}
+/* ****************** 800 ~ 1199-E ****************** */
+
+/* ****************** 0 ~ 799-S ****************** */
+@media screen and (max-width: 799px){
+    /* header-S */
+    #header{width: 100%;
+        background-color: transparent
+    }
+    #gnb{width: 250px; margin-right: calc(-250px / 2);
+        position: absolute; right: 50%; top: 300px;
+        text-align: center
+    }
+    #gnb li{width: 100%; height: 50px; margin-bottom:40px;
+        background-color: rgba(0, 0, 0, 0.3); border-radius: 20px;
+        line-height: 50px; color: #fff; font-size: 20px
+    }
+    .tnb{display: none}
+    /* ***container-S *** */
+    #container{width: 100%; height: 100%; margin-left: 0;
+        position: fixed;
+    }
+    /* bar-S */
+    #bar{display: none}
+    /* bar-E */
+    #container article{display: none;}
+    #container article:nth-of-type(1){display: block; width: 100%; height: 100%;
+        position: absolute; left: 0; top: 0;
+        text-indent: -9999px
+    }
+    /* ***container-E *** */
+}
+/* ****************** 0 ~ 799-E ****************** */

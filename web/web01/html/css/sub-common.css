@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+.inner>div:after{content: ""; display: block; clear: both}
+#visual{width: 100%; min-width: 1200px; height: 165px; padding-top: 185px;
+    background-repeat: no-repeat; background-position: center center
+}
+#visual .inner{font-size: 46px; font-weight: 700; line-height: 50px; height: 50px; color: #fff; text-align: center}
+/* lnb-S */
+.lnb-wrap{width: 100%; min-width: 1200px; margin-bottom: 120px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1)
+}
+.lnb{color:#222}
+.lnb:after{content: ""; display: block; clear: both}
+.home{width:48px; height: 50px; float: left;
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    font-size: 26px; color: rgba(34, 34, 34, 0.5); line-height: 50px; text-align: center
+}
+.lnb-wrap strong{float: left; padding: 0 30px 0 30px; height: 50px;
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    font-size: 14px; line-height: 50px; color:rgba(34, 34, 34, 0.6)
+}
+.lnb-wrap em{float: left; height: 50px; padding: 0 30px 0 30px;
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    font-size: 14px; font-weight: 400; line-height: 50px
+}
+.lnb-box span:before{content: ""; float: left; width: 0; height: 50px;
+    border-left: 1px solid rgba(0, 0, 0, 0.1)
+}
+.lnb-box span{float:left; cursor: pointer; width: 50px; height: 50px;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    font-size: 20px; color: rgba(34, 34, 34, 0.5); line-height: 50px; text-align: center
+}
+.lnb-box ul{float: left; padding: 0 20px; display: none; height: 50px;
+    border-right: 1px solid rgba(0, 0, 0, 0.1)
+}
+.lnb-box li{float: left; height: 40px; padding: 10px 10px 0 10px}
+.lnb-box a{font-size: 14px; line-height: 30px; color: rgba(34, 34, 34, 0.8); display: block;
+    transition: all 0.3s
+}
+
+.lnb-box:hover ul{display: block}
+.lnb-box a:hover{border-bottom: 1px solid #999;
+    color: #4987f3
+}
+/* lnb-E */
+#container h2{font-size: 36px; font-weight: 700; color: #3e3e3e; line-height: 56px;text-align: center}
+.inner>p{margin-bottom: 80px;
+    font-size: 20px; color: #999; line-height: 30px;text-align: center
+}
+#container>.inner>div:last-child{margin-bottom: 120px}
